@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "task": "Complete report",
+    "completed": false,
+    "isEditing": false
+  },
+  {
+    "id": 2,
+    "task": "Go to the supermarket",
+    "completed": true,
+    "isEditing": false
+  },
+  {
+    "id": 3,
+    "task": "Exercise",
+    "completed": false,
+    "isEditing": false
+  }, 
+  {
+    "id": 4,
+    "task": "Read a book",
+    "completed": false,
+    "isEditing": false
+  }
+]

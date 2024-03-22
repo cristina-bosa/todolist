@@ -1,0 +1,89 @@
+@use 'cards';
+@use 'buttons';
+@use 'forms';
+@use 'message';
+@use 'query' as query;
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+:root {
+  background-color: var(--light);
+  color: var(--dark);  
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary: #e53170;
+  --light: #fffffe;
+  --dark: #0f0e17;
+
+}
+
+*,
+*::after,
+*::before {
+  font-family: "Gochi Hand", cursive;
+  box-sizing: border-box;
+  font-size: 1.2rem; 
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #e5e5f7;
+  background-image: linear-gradient(#e53170 1.1px, transparent 1.1px), linear-gradient(to right, #e53170 1.1px, #e5e5f7 1.1px);
+  background-size: 25px 25px;
+}
+
+.container {
+  background-color: #e5e5f7;
+  border: .04rem solid var(--primary);
+  width: 850px;
+  max-width: 1200px;
+  max-height: 1000px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  box-shadow: .5rem .5rem 0px 0px var(--primary);
+  overflow-y: scroll;
+  overflow-x: hidden;  
+  @include query.respond-to("small") {
+    width: 100%;
+  }
+  &::-webkit-scrollbar {
+    width: .1rem;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+
+.primary-color {
+  color: var(--primary);
+}
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #e5e5f7;
+  border: .04rem solid var(--primary);
+  box-shadow: .5rem .5rem 0px 0px var(--primary);
+}
