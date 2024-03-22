@@ -2,6 +2,9 @@
 
 This is a simple TodoList application built with React and Vite.
 
+## demo:
+https://oridevtodo.vercel.app
+
 ## Features
 
 - Add, edit, and delete tasks
